@@ -42,7 +42,7 @@ local spamThreads = {}
 
 local debug = loadstring(game:HttpGet("https://raw.githubusercontent.com/devdoroz/debug/main/updated.lua"))()
 local fastThreads = loadstring(game:HttpGet('https://raw.githubusercontent.com/devdoroz/fastThread/main/stroke.lua'))()
-local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/KSA2LbopceHtudepr0l8lkgGlzJds2hwQhn/Tester-Oh-No/refs/heads/main/Ui.lua"))()
+local Lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/devdoroz/bleachhack-ui-lib/refs/heads/main/no.lua"))()
 local vfx = game:GetObjects("rbxassetid://17788436247")[1]:Clone()
 
 local UI = Lib:Create()
