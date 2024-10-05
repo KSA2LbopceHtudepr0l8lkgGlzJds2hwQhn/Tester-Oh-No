@@ -372,4 +372,4 @@ function Bitchhack:CreateCategory(title, icon)
 	return Category.new(title, icon, self)
 end
 
-return Bleachhack
+return Bitchhack
