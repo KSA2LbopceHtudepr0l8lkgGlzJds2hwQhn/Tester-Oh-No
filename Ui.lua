@@ -6,7 +6,7 @@ local statsService = game:GetService("Stats")
 
 local player = players.LocalPlayer
 
-local Bleachhack = {}; Bleachhack.__index = Bitchhack
+local Bitchhack = {}; Bithchhack.__index = Bitchhack
 local objects = game:GetObjects("rbxassetid://17799632030")[1]:Clone()
 
 local IS_STUDIO = runService:IsStudio()
@@ -49,7 +49,7 @@ end
 
 function valueToColor2(value, max_value)
 	value = math.max(0, math.min(value, max_value))
-
+	
 	local red = math.floor((1 - (value / max_value)) * 255)
 	local green = math.floor((value / max_value) * 255)
 
@@ -331,7 +331,7 @@ local Category = {}; Category.__index = Category; do
 	end
 end
 
-function Bleachhack:Create()
+function Bitchhack:Create()
 	local self = setmetatable({}, Bleachhack)
 	self.UI = objects.Bleachhack:Clone()
 	self.UI.Parent = IS_STUDIO and player.PlayerGui or ((gethui and gethui()) or game:GetService("CoreGui"))
@@ -368,7 +368,7 @@ function Bleachhack:Create()
 	return self
 end
 
-function Bleachhack:CreateCategory(title, icon)
+function Bitchhack:CreateCategory(title, icon)
 	return Category.new(title, icon, self)
 end
 
