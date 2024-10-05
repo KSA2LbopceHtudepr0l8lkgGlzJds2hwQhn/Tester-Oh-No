@@ -2,7 +2,7 @@ if getgenv().bleach then warn("Bleachhack is already executed") return end
 getgenv().bleach = true
 local players = game:GetService("Players")
 local stats = game:GetService("Stats")
-local socialService = game:GetService("SocialService")
+local VIM = game:GetService("VirtualInputManager")
 local coreGui = game:GetService("CoreGui")
 local textChatService = game:GetService("TextChatService")
 local runService = game:GetService("RunService")
@@ -20,7 +20,7 @@ local alive = workspace:FindFirstChild("Alive")
 
 local opponent = nil
 local ball = nil
-local event = VirtualInputManager:WaitForChild("\n")
+local event = VIM:WaitForChild("\n")
 local parried = false
 local targetted = false
 local falseCurve = false
